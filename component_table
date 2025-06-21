@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>箱庭構成要素一覧</title>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+.hakoniwa-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.hakoniwa-table th, .hakoniwa-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-word;
+}
+.core { background-color: #d7ecff; }
+.component { background-color: #e1f4e1; }
+.library { background-color: #ffe6e6; }
+.asset { background-color: #fff7cc; }
+.pro { background-color: #ffd7c2; color: #999; }
+</style>
+</head>
+<body>
+<h2>箱庭構成要素 一覧表</h2>
+<p>箱庭には様々な機能セットがあります。それらは、すべてオープンソース（GitHub）で管理されています。ただし、一部PROライセンスのものがあり、ライセンス購入いただくことでご利用いただけます。</p>
+<table border="1" class="dataframe hakoniwa-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>名称</th>
+      <th>分類</th>
+      <th>説明</th>
+      <th>GitHubリンク</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>箱庭コンダクタ</td>
+      <td>component</td>
+      <td>箱庭をマルチノードで時刻同期しながらシミュレーションするためのコンポーネント</td>
+      <td><a href="https://github.com/toppers/hakoniwa-conductor" target="_blank">https://github.com/toppers/hakoniwa-conductor</a></td>
+    </tr>
+    <tr>
+      <td>Unreal SIM</td>
+      <td>library</td>
+      <td>Unreal Engine のプログラムを箱庭時刻同期できるようにするためのプラグイン</td>
+      <td><a href="https://github.com/toppers/hakoniwa-unreal-simasset-plugin" target="_blank">https://github.com/toppers/hakoniwa-unreal-simasset-plugin</a></td>
+    </tr>
+    <tr>
+      <td>Unity SIM</td>
+      <td>library</td>
+      <td>Unityのプログラムを箱庭時刻同期できるようにするためのプラグイン</td>
+      <td><a href="https://github.com/toppers/hakoniwa-sim-csharp" target="_blank">https://github.com/toppers/hakoniwa-sim-csharp</a></td>
+    </tr>
+    <tr>
+      <td>Athrill</td>
+      <td>asset</td>
+      <td>マイコンシミュレータAthrillのコア機能</td>
+      <td><a href="https://github.com/toppers/athrill" target="_blank">https://github.com/toppers/athrill</a></td>
+    </tr>
+    <tr>
+      <td>Athrill Device</td>
+      <td>asset</td>
+      <td>Athrillの周辺デバイス</td>
+      <td><a href="https://github.com/toppers/athrill-device" target="_blank">https://github.com/toppers/athrill-device</a></td>
+    </tr>
+    <tr>
+      <td>箱庭MuJoCoアセット</td>
+      <td>asset</td>
+      <td>MuJoCoで作成したロボットを箱庭アセットとして登録・シミュレーションする機能</td>
+      <td><a href="https://github.com/hakoniwalab/hakoniwa-mujoco-robots" target="_blank">https://github.com/hakoniwalab/hakoniwa-mujoco-robots</a></td>
+    </tr>
+    <tr>
+      <td>箱庭ドローンシミュレータ(Unity)</td>
+      <td>asset</td>
+      <td>箱庭ドローンシミュレータのビジュアライズ機能のUnity版</td>
+      <td><a href="https://github.com/hakoniwalab/hakoniwa-unity-drone" target="_blank">https://github.com/hakoniwalab/hakoniwa-unity-drone</a></td>
+    </tr>
+    <tr>
+      <td>箱庭ドローンシミュレータ(Engine)</td>
+      <td>asset</td>
+      <td>箱庭ドローンシミュレータのEngine側（物理・制御等）の機能セット/PRO版は非公開です</td>
+      <td><a href="https://github.com/toppers/hakoniwa-drone-core" target="_blank">https://github.com/toppers/hakoniwa-drone-core</a></td>
+    </tr>
+    <tr>
+      <td>ROSブリッジ</td>
+      <td>component</td>
+      <td>箱庭をROSシステムと連携するためのブリッジ機能</td>
+      <td><a href="https://github.com/toppers/hakoniwa-bridge" target="_blank">https://github.com/toppers/hakoniwa-bridge</a></td>
+    </tr>
+    <tr>
+      <td>MAVLINKブリッジ</td>
+      <td>component</td>
+      <td>箱庭をMAVLink通信と連携するためのブリッジ機能（mavlinkディレクトリ）</td>
+      <td><a href="https://github.com/toppers/hakoniwa-drone-core" target="_blank">https://github.com/toppers/hakoniwa-drone-core</a></td>
+    </tr>
+    <tr>
+      <td>ARブリッジ</td>
+      <td>component</td>
+      <td>箱庭をARデバイスと連携するためのブリッジ機能</td>
+      <td><a href="https://github.com/toppers/hakoniwa-ar-bridge" target="_blank">https://github.com/toppers/hakoniwa-ar-bridge</a></td>
+    </tr>
+    <tr>
+      <td>Webサーバー</td>
+      <td>component</td>
+      <td>箱庭をWebsocket連携するためのブリッジ機能</td>
+      <td><a href="https://github.com/toppers/hakoniwa-webserver" target="_blank">https://github.com/toppers/hakoniwa-webserver</a></td>
+    </tr>
+    <tr>
+      <td>UE PDU</td>
+      <td>library</td>
+      <td>Unreal EngineでのPDU通信を隠蔽化しWebサーバと連携するためのクライアント機能</td>
+      <td><a href="https://github.com/hakoniwalab/hakoniwa-pdu-unreal" target="_blank">https://github.com/hakoniwalab/hakoniwa-pdu-unreal</a></td>
+    </tr>
+    <tr>
+      <td>Unity PDU</td>
+      <td>library</td>
+      <td>UnityでのPDU通信を隠蔽化しWebサーバと連携するためのクライアント機能</td>
+      <td><a href="https://github.com/toppers/hakoniwa-pdu-csharp" target="_blank">https://github.com/toppers/hakoniwa-pdu-csharp</a></td>
+    </tr>
+    <tr>
+      <td>箱庭APIバインディング</td>
+      <td>core</td>
+      <td>箱庭アセットAPIを様々な言語向けにバインディング（一部PRO）</td>
+      <td><a href="https://github.com/toppers/hakoniwa-core-cpp-client" target="_blank">https://github.com/toppers/hakoniwa-core-cpp-client</a></td>
+    </tr>
+    <tr>
+      <td>PDUバイナリ変換</td>
+      <td>library</td>
+      <td>PDU定義の各言語マッピングとシリアライズ機能</td>
+      <td><a href="https://github.com/toppers/hakoniwa-ros2pdu" target="_blank">https://github.com/toppers/hakoniwa-ros2pdu</a></td>
+    </tr>
+    <tr>
+      <td>箱庭コア機能</td>
+      <td>core</td>
+      <td>箱庭の中核となる機能</td>
+      <td><a href="https://github.com/toppers/hakoniwa-core-cpp" target="_blank">https://github.com/toppers/hakoniwa-core-cpp</a></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
