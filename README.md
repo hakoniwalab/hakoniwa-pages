@@ -1,1 +1,1 @@
-# hakoniwalab-hakoniwa-pages
+# hakoniwa-pages
